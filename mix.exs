@@ -37,9 +37,8 @@ defmodule GRPC.Mixfile do
   defp deps do
     [
       {:protobuf, "~> 0.8.0", organization: "tubitv"},
+      {:gun, "~> 2.0", hex: :grpc_gun, organization: "tubitv"},
       {:cowboy, "~> 2.9"},
-      {:cowlib, "~> 2.11", override: true},
-      {:gun, "~> 2.0.0", hex: :grpc_gun},
       {:ex_doc, "~> 0.25", only: :dev},
       {:inch_ex, "~> 2.0", only: [:dev, :test]},
       {:dialyxir, "~> 1.1", only: [:dev, :test], runtime: false}
