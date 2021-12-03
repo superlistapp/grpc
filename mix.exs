@@ -1,7 +1,7 @@
 defmodule GRPC.Mixfile do
   use Mix.Project
 
-  @version "0.5.0"
+  @version "0.6.0"
 
   def project do
     [
@@ -36,7 +36,7 @@ defmodule GRPC.Mixfile do
 
   defp deps do
     [
-      {:protobuf, "~> 0.8.0", organization: "tubitv"},
+      {:protobuf, "~> 0.8"},
       {:gun, "~> 2.0", hex: :grpc_gun, organization: "tubitv"},
       {:cowboy, "~> 2.9"},
       {:ex_doc, "~> 0.25", only: :dev},
