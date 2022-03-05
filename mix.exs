@@ -37,7 +37,7 @@ defmodule GRPC.Mixfile do
   defp deps do
     [
       {:protobuf, "== 0.8.0"},
-      {:gun, "~> 2.0", hex: :grpc_gun, organization: "tubitv"},
+      {:gun, "~> 2.0.0-rc.2"},
       {:cowboy, "~> 2.9"},
       {:ex_doc, "~> 0.25", only: :dev},
       {:inch_ex, "~> 2.0", only: [:dev, :test]},
@@ -54,12 +54,22 @@ defmodule GRPC.Mixfile do
   #   }
   # end
 
+  # defp package do
+  #   %{
+  #     organization: "tubitv",
+  #     maintainers: "",
+  #     licenses: ["Apache 2"],
+  #     links: %{"GitHub" => "https://github.com/elixir-grpc/grpc"},
+  #     files: ~w(mix.exs README.md lib src config LICENSE .formatter.exs)
+  #   }
+  # end
+
   defp package do
     %{
-      organization: "tubitv",
+      organization: "superlistapp",
       maintainers: "",
       licenses: ["Apache 2"],
-      links: %{"GitHub" => "https://github.com/elixir-grpc/grpc"},
+      links: %{"GitHub" => "https://github.com/superlistapp/grpc"},
       files: ~w(mix.exs README.md lib src config LICENSE .formatter.exs)
     }
   end
